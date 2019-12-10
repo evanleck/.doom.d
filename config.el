@@ -16,6 +16,12 @@
 (setq projectile-enable-idle-timer t)
 (setq projectile-idle-timer-seconds 300)
 
+;; Enable simpleclip
+(simpleclip-mode 1)
+
+;; Enable evil-matchit
+(global-evil-matchit-mode 1)
+
 ;; Tell Projectile to look in ~/Code and ~/Clones for projects.
 (setq projectile-project-search-path '("~/Code" "~/Code/prepaid" "~/Code/prepaid/wt" "~/Code/clones"))
 

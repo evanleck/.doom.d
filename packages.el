@@ -1,6 +1,8 @@
 ;; -*- no-byte-compile: t; -*-
 ;;; ~/.doom.d/packages.el
 (package! dockerfile-mode)
+(package! evil-matchit)
+(package! simpleclip)
 
 ;;; Examples:
 ;; (package! some-package)
