@@ -1,7 +1,7 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
 ;; Fira Code all day.
-(setq doom-font (font-spec :family "Fira Code" :size 11))
+(setq doom-font (font-spec :family "SF Mono" :size 11))
 
 ;; Slightly smoother scrolling.
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
