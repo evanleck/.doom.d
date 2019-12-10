@@ -10,7 +10,7 @@
 (add-hook 'window-setup-hook #'toggle-frame-maximized)
 
 ;; Load my default theme.
-(setq doom-theme 'doom-nord)
+(setq doom-theme 'doom-dracula)
 
 ;; Tell Projectile to recompile tags on a regular interval.
 (setq projectile-enable-idle-timer t)
