@@ -17,7 +17,7 @@
 (setq projectile-idle-timer-seconds 300)
 
 ;; Tell Projectile to look in ~/Code and ~/Clones for projects.
-(setq projectile-project-search-path '("~/Code" "~/Clones"))
+(setq projectile-project-search-path '("~/Code" "~/Code/prepaid" "~/Code/prepaid/wt" "~/Code/clones"))
 
 ;; Add _ as a word character in Ruby.
 (add-hook 'enh-ruby-mode-hook '(lambda () (modify-syntax-entry ?_ "w")))
