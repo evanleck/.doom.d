@@ -40,14 +40,10 @@
   (modify-syntax-entry ?_ "w"))
 
 ;; Matchit
-(global-evil-matchit-mode +1)
+(global-evil-matchit-mode)
 
 ;; Tell Projectile to look in ~/Code and ~/Clones for projects.
 (setq projectile-project-search-path '("~/Code" "~/Code/prepaid" "~/Code/prepaid/wt" "~/Code/clones"))
 
-;; Tell Projectile to recompile tags on a regular interval.
-;; (setq projectile-enable-idle-timer t)
-;; (setq projectile-idle-timer-seconds 300)
-
 ;; Good god, stop copying everything I delete!
-(simpleclip-mode +1)
+(simpleclip-mode)
