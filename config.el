@@ -1,5 +1,8 @@
-;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
-(setq doom-font (font-spec :family "JetBrains Mono" :size 11))
+;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
+(setq user-full-name "Evan Lecklider"
+      user-mail-address "evan@lecklider.com")
+
+(setq doom-font (font-spec :family "Fira Mono" :size 22))
 
 ;; Slightly more sane scrolling.
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
@@ -20,7 +23,11 @@
 (map! :n "C-h" #'evil-window-left
       :n "C-j" #'evil-window-down
       :n "C-k" #'evil-window-up
-      :n "C-l" #'evil-window-right)
+      :n "C-l" #'evil-window-right
+
+      ;; Because I'm a dumb ape.
+      :n "C-s" #'save-buffer
+      :i "C-v" #'yank)
 
 ;; Always start with a maximized frame (window in the OS).
 (add-hook 'window-setup-hook #'toggle-frame-maximized)
@@ -39,11 +46,6 @@
   ;; Add _ as a word character.
   (modify-syntax-entry ?_ "w"))
 
-;; Matchit
-(global-evil-matchit-mode)
-
 ;; Tell Projectile to look in ~/Code and ~/Clones for projects.
+(setq projectile-auto-discover t)
 (setq projectile-project-search-path '("~/Code" "~/Code/prepaid" "~/Code/prepaid/wt" "~/Code/clones"))
-
-;; Good god, stop copying everything I delete!
-(simpleclip-mode)
